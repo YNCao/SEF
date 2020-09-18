@@ -25,7 +25,7 @@ device_name = device.type+':'+str(device.index) if device.type=='cuda' else 'cpu
 
 
 ########################################################################################################## initialize params
-datasetname = "cubbirds"
+datasetname = "cubbirds" 
 image_size = 448
 batchsize = 32
 nthreads = 8
@@ -80,8 +80,8 @@ modelname = log_items + '.model'
 
 
 ############################################################################################################## model zoo and dataset path
-datapath = '/path/to/your/dataset'
-modelzoopath = '/path/to/the/vanilla/resnet/models'
+datapath = '/home/cyn/datasets/CUB_200_2011'
+modelzoopath = '/home/cyn/models/seg'
 sys.path.append(modelzoopath)
 datasetpath = os.path.join(datapath, datasetname)
 modelpath = os.path.join(progpath, 'models')
