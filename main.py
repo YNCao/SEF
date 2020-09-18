@@ -80,8 +80,8 @@ modelname = log_items + '.model'
 
 
 ############################################################################################################## model zoo and dataset path
-datapath = '/home/cyn/datasets/CUB_200_2011'
-modelzoopath = '/home/cyn/models/seg'
+datapath = '/home/cyn/datasets'
+modelzoopath = '/home/cyn/models/sef'
 sys.path.append(modelzoopath)
 datasetpath = os.path.join(datapath, datasetname)
 modelpath = os.path.join(progpath, 'models')
