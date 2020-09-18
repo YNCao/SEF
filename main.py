@@ -20,7 +20,7 @@ sys.path.append(progpath)
 import modellearning
 import sef
 
-device = torch.device("cuda:0" if torch.cuda.is_available() > 0 else "cpu")
+device = torch.device("cuda:3" if torch.cuda.is_available() > 0 else "cpu")
 device_name = device.type+':'+str(device.index) if device.type=='cuda' else 'cpu'
 
 
@@ -81,7 +81,7 @@ modelname = log_items + '.model'
 
 ############################################################################################################## model zoo and dataset path
 datapath = '/home/cyn/datasets'
-modelzoopath = '/home/cyn/models/sef'
+modelzoopath = '/home/cyn/models'
 sys.path.append(modelzoopath)
 datasetpath = os.path.join(datapath, datasetname)
 modelpath = os.path.join(progpath, 'models')
