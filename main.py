@@ -27,7 +27,7 @@ device_name = device.type+':'+str(device.index) if device.type=='cuda' else 'cpu
 ########################################################################################################## initialize params
 datasetname = "cubbirds" 
 image_size = 448
-batchsize = 32
+batchsize = 24
 nthreads = 8
 lr = 1e-2
 lmgm = 1
