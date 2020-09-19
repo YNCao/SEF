@@ -1,4 +1,3 @@
-datasets/
-runs/
-results/
+/runs/
+/results/
 *.pyc

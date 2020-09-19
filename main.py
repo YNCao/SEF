@@ -86,7 +86,12 @@ sys.path.append(modelzoopath)
 datasetpath = os.path.join(datapath, datasetname)
 modelpath = os.path.join(progpath, 'models')
 resultpath = os.path.join(progpath, 'results')
-
+if not os.path.exists(datasetpath):
+    os.makedirs(datasetpath)
+if not os.path.exists(modelpath):
+    os.makedirs(modelpath)
+if not os.path.exists(resultpath):
+    os.makedirs(resultpath)
 
 
 ###########################################################################################################################  organizing data

@@ -1,9 +1,12 @@
 import torch
+import os
 device = torch.device("cuda:0" if torch.cuda.is_available() > 0 else "cpu")
 
 def saveCheckpoint(state, datasetname=None):
     """Save checkpoint if a new best is achieved"""
-
+    
+    if not os.path.exists('ckpt'):
+        os.makedirs('ckpt')
     filename = './ckpt/{}-checkpoint.pth.tar'
 
     # if is_best:
