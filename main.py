@@ -224,5 +224,7 @@ logfile.close()
 
 
 #################################################################################################################### save model
+if not os.path.exists(os.path.join(modelpath, modelname)):
+    os.makedirs(os.path.join(modelpath, modelname))
 torch.save({'model_params':model.state_dict(), 'train_params':train_rsltparams}, os.path.join(modelpath, modelname))
 
